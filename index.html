@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <title>Home - KJMarlowe </title>
 </head>
 <body>
     <div class="header-container">
-        <div class="nav-toggle" id="nav-toggle">
-            <img class="nav-toggle-image" src="./images/menu-bar (2).png" alt="three bars that symbolize mobile navigation (used only for mobile devices) click to enable mobile navigation">
+        <div class="nav-toggle" id="navToggle">
+            <img id="openIcon" class="nav-toggle-image" src="./images/menu-bar (2).png" alt="three bars that symbolize mobile navigation (used only for mobile devices) click to enable mobile navigation">
+            <img class="nav-toggle-image hidden" src="./images/closemenu.png" alt="three bars that symbolize mobile navigation (used only for mobile devices) click to disable mobile navigation">
         </div>
         <div class="left">
             <div class="logo">
                 <img class = "header-image" src="./images/KJMarlowe(1).png" alt="company logo">
             </div>
-            <div class="nav">
+            <nav>
                 <button class="nav-button">Home</button>
                 <button class="nav-button">About</button>
                 <button class="nav-button">Investments</button>
                 <button class="nav-button">Calculators</button>
-            </div>
+            </nav>
         </div>
         <div class="right">
-            <div class="nav">
-                <button class="login-header" onclick="login()">Login</button>
-                <button class="signup-header" onclick="signup()">Signup</button>
-            </div>
+            <nav>
+                <button id="loginHeader" class="login-header" onclick="login()">Login</button>
+                <button id="signupHeader" class="signup-header" onclick="signup()">Signup</button>
+            </nav>
         </div>
     </div>
     <div class="hero-container">
